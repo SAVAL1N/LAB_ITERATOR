@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="383.0" prefWidth="369.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab3.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Pane prefHeight="200.0" prefWidth="200.0">
+      <children>
+         <ImageView fx:id="image" fitHeight="179.0" fitWidth="330.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true" />
+      </children>
+   </Pane>
+   <Pane prefHeight="200.0" prefWidth="200.0">
+      <children>
+         <Button layoutX="38.0" layoutY="113.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="Назад" />
+         <Button fx:id="start" layoutX="243.0" layoutY="113.0" mnemonicParsing="false" onAction="#onStartButtonClick" text="Запуск" />
+         <Button layoutX="180.0" layoutY="113.0" mnemonicParsing="false" onAction="#onStopButtonClick" text="Стоп" />
+         <Button layoutX="102.0" layoutY="113.0" mnemonicParsing="false" onAction="#onNextButtonClick" text="Вперед" />
+         <TextField fx:id="speedtime" layoutX="194.0" layoutY="68.0" prefHeight="25.0" prefWidth="56.0" />
+         <Label layoutX="144.0" layoutY="39.0" prefHeight="17.0" prefWidth="173.0" text="Интервал между картинками" />
+      </children>
+   </Pane>
+</VBox>
